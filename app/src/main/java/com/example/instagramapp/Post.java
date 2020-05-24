@@ -1,9 +1,10 @@
 package com.example.instagramapp;
-
+import com.parse.ParseClassName;
 import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
+@ParseClassName("Post")
 public class Post extends ParseObject {
     public static final String KEY_DESCRIPTION = "description";
     public static final String KEY_IMAGE ="image";
@@ -22,7 +23,7 @@ public class Post extends ParseObject {
         return getParseFile(KEY_IMAGE);
     }
 
-    public void setmage(ParseFile parseFile){
+    public void setImage(ParseFile parseFile){
         put(KEY_IMAGE,parseFile);
     }
 
@@ -31,6 +32,6 @@ public class Post extends ParseObject {
     }
 
     public void setUser(ParseUser user){
-        put(KEY_USER,user);
+        put(KEY_USER, user);
     }
 }

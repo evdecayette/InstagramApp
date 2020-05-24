@@ -9,10 +9,18 @@
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/nav_logo_whiteout"/>
+
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:layout_weight="1"
         android:ems="10"
         android:hint="username"/>
@@ -30,6 +38,18 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:layout_weight="1"
+        android:background="#00B0FF"
+        android:textColor="#FFFFFFFF"
         android:text="Login"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00E676"
+        android:textColor="#FFFFFFFF"
+        android:layout_weight="1"
+        android:text="SIGN UP"/>
 </LinearLayout>
