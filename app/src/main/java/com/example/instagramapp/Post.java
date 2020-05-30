@@ -10,6 +10,10 @@ public class Post extends ParseObject {
     public static final String KEY_IMAGE ="image";
     public static final String KEY_USER ="user";
 
+    public static final String KEY_NAME ="username";
+    public static final String KEY_PASSWORD = "password";
+
+
     public String getDescription(){
 
         return getString(KEY_DESCRIPTION);
@@ -17,6 +21,22 @@ public class Post extends ParseObject {
 
     public void setDescription(String description){
         put(KEY_DESCRIPTION, description);
+    }
+
+    public String getName(){
+        return getString(KEY_NAME);
+    }
+
+    public void setName(String username){
+        put(KEY_NAME, username);
+    }
+
+    public String getPassword(){
+        return getString(KEY_PASSWORD);
+    }
+
+    public void setPassword(String password){
+        put(KEY_PASSWORD, password);
     }
 
     public ParseFile getImage(){

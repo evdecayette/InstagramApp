@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         ivPostImage = findViewById(R.id.ivPostImage);
         btnSubmit = findViewById(R.id.btnSubmit);
 
+
         btnCaptureImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,8 +59,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
        // queryPosts();
-        btnSubmit.setOnClickListener(
-                new View.OnClickListener() {
+        btnSubmit.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String description = etDescription.getText().toString();
@@ -159,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 for(Post post : posts){
-                    Log.i(TAG,"Post: " + post.getDescription() + ", username: " + post.getUser().getUsername());
+                   // Log.i(TAG,"Post: " + post.getDescription() + ", username: " + post.getUser().getUsername());
                 }
             }
         });
